@@ -1,13 +1,13 @@
 # Simple forest simulation app
-author: Susanne Suvanto
+*author: Susanne Suvanto*
 
 ## Description
 
 This repository contains the codes for a simple Shiny app, demonstrating
 normal distribution by simulating a forest based on user inputs:
 
-*mean and standard deviation for tree size distribution
-*number of trees per hectare
++ mean and standard deviation for tree size distribution
++ number of trees per hectare
 
 ## Test the app
 
