@@ -34,7 +34,7 @@ shinyUI(fluidPage(
   mainPanel(
     h3("1. Puiden kokojakauma"),
     plotOutput("distPlot", width="50%", height="200px"),
-    h3("2. Metsä lintuperspektiivistä"),
+    h3("2. Metsä ylhäältä katsottuna"),
     plotOutput("mapPlot")
   )
 ))
