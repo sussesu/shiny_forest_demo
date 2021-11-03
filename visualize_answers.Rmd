@@ -18,7 +18,7 @@ library(tidyverse)
 library(cowplot)
 library(patchwork)
 
-u <- "https://docs.google.com/spreadsheets/d/1r8Ty59HZqGG5eqJEs7-aCe0PNxndH8FtWmobUfqGfcA/edit?usp=sharing"
+u <- "" # add url for google sheet here (check sharing settings if it doesn't work)
 
 vastaukset <- read.csv(text=gsheet2text(u, format='csv'), stringsAsFactors=FALSE, 
          skip=1, header = FALSE, 
@@ -40,7 +40,7 @@ final_densities <- do.call(rbind, df_list)
 final_densities %>%
   ggplot(aes(dbh, density, col=factor(id))) +
   geom_line() + 
-  facet_wrap(metsa ~ ., ncol=3) +
+  facet_wrap(metsa ~ ., ncol=1) +
   theme(legend.position = "none") +
   xlab("Rungon läpimitta (cm)") 
 

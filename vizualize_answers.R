@@ -3,7 +3,7 @@ library(gsheet)
 library(ggplot2)
 library(tidyverse)
 
-u <- "https://docs.google.com/spreadsheets/d/1r8Ty59HZqGG5eqJEs7-aCe0PNxndH8FtWmobUfqGfcA/edit?usp=sharing"
+u <- "" # add url for google sheet here (check sharing settings if it doesn't work)
 
 vastaukset <- read.csv(text=gsheet2text(u, format='csv'), stringsAsFactors=FALSE, 
          skip=1, header = FALSE, 
